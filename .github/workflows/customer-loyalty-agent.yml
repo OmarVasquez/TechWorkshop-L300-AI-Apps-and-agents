@@ -13,6 +13,10 @@ on:
       - 'src/app/tools/discountLogic.py'
   workflow_dispatch:
 
+permissions:
+  contents: read
+  id-token: write  # Required for Azure OIDC authentication
+
 jobs:
   run-customer-loyalty-agent:
     runs-on: ubuntu-latest
