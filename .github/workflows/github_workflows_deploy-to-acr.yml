@@ -34,7 +34,7 @@ jobs:
           context: ./src
           file: ./src/Dockerfile
           push: true
-          tags: ${{ secrets.ACR_LOGIN_SERVER }}/myapp:latest
+          tags: ${{ secrets.ACR_LOGIN_SERVER }}/chat-app:latest
 
       - name: Remove .env after build
         run: rm src/.env
